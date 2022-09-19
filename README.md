@@ -27,7 +27,7 @@
 
  Lastly, 
  ```
-  Type 'ls' into your Gitbash or Terminal to see a list of items within the directory. If you have done the previous steps correctly then you should see a respository titled "mnifty". Simply type in the shortcut to open it in your code editor of choice. Lastly, check the package.json file  to see the dependencies needed to run this. WIthin your terminal run: npm install.
+  Type 'ls' into your Gitbash or Terminal to see a list of items within the directory. If you have done the previous steps correctly then you should see a respository titled "Lightcast-Project". Simply type in the shortcut to open it in your code editor of choice.
  ```
 
 
