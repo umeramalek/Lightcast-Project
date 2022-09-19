@@ -1,0 +1,81 @@
+body {
+    background-color: gray !important;
+   }
+   
+   .bodycontent{
+     max-width: 1000px;
+     margin: auto;
+     background-color: white;
+   }
+   
+   
+   .canvasjs-chart-credit{
+     display:none;
+   }
+   
+   .colContainer{
+     margin: 10px;
+   }
+   
+   .rightAlign{
+     text-align: right;
+   }
+   
+   .colorBlue{
+     color: #0096FF;
+   }
+   
+   .headerLine{
+     margin-top: 5px;
+   }
+   .headerLineNo{
+     margin-top: 5px;
+     margin-bottom: 0px;
+   }
+   
+   .circle {
+     width: 10px;
+     height: 10px;
+     background: black;
+     border-radius: 50%
+   }
+   
+   .square {
+     width: 10px;
+     height: 10px;
+     background: #0095ff;
+   }
+   
+   .triangle {
+     width: 0;
+     height: 0;
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-bottom: 10px solid lightblue;
+   }
+   
+   .grid .gridHeaderRow{
+     font-weight: bold;
+   }
+   
+   .borderBottom,.grid .gridHeaderRow,.grid .gridRow{
+     border-bottom: #80808047 solid 1px; 
+   }
+   
+   .grid .gridCol{  
+     padding: 5px 0px 5px 0px;
+   }
+   
+   .boxPadding{
+     padding-top: 30px;
+     padding-bottom: 30px;
+     text-align: center;
+   }
+   .boxPadding.leftRightBorder{
+     border-left: #80808047 solid 1px; 
+     border-right: #80808047 solid 1px; 
+   }
+   
+   /* {
+     background: linear-gradient(to right, black 50%, white 50%);
+   } */
