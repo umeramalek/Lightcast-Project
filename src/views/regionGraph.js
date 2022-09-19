@@ -57,3 +57,31 @@ class RegionGraph extends Component {
 				gridThickness: 0.5,
 				lineThickness: 0
 			},
+			// function that takes an array of data points and creates a bar graph 
+			//  arguments - type(line), type of marker (circle, square, traingle)
+			// arguments - color and line color
+			//  arguments - tooltip - for each point on the graph, which will show up when you hover over it
+			// arguments - array of data points that are created by looping through all regions in regionGraphData and then for each state in stateGrapData and nation in nationGrapData
+			data: [{
+				type: "line",
+				markerType: "circle",
+				markerColor: "black",
+				lineColor: "black",
+				toolTipContent: "Year {x}: {y}%",
+				dataPoints: regionGraphData.region.map((d)=> {return {x:d.year,y:d.percentage} })
+			},{
+				type: "line",
+				markerType: "square",
+				markerColor: "#0095ff",
+				lineColor: "#0095ff",
+				toolTipContent: "Year {x}: {y}%",
+				dataPoints: regionGraphData.state.map((d)=> {return {x:d.year,y:d.percentage} })
+			},{
+				type: "line",
+				markerType: "triangle",
+				markerColor: "lightblue",
+				lineColor: "lightblue",
+				toolTipContent: "Year {x}: {y}%",
+				dataPoints: regionGraphData.nation.map((d)=> {return {x:d.year,y:d.percentage} })
+			}]
+		};
