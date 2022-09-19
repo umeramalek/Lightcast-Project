@@ -53,3 +53,18 @@ class RegionGrid extends Component {
         </>);
     }
 
+
+    // rendering regional grid container
+    render(){
+        return(
+        <div>
+            <Container fluid className="grid">
+                {this.regionalGrid()}
+            </Container>
+        </div>
+        )
+    }   
+}
+
+export default RegionGrid;
+
