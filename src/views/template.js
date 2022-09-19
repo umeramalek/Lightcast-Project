@@ -20,8 +20,8 @@ class Template extends Component {
 		}
 	}
 
-	// fetch - then method to to call another function 
-	// fetches the data fromt he server. and passes "then" an argument, which shouls return a JSON data back 
+	// fetch data which will call the API and return a response- then method to to call another function 
+	// fetches the data from the server. and passes "then" an argument, which shouls return a JSON data back 
 	fetchData() {
 		fetch('mock-data1.json'
 			, {
@@ -36,6 +36,21 @@ class Template extends Component {
 				})
 			});
 	}
+	// allows to execute the react code when the component is already placed in the DOM
+	componentDidMount() {
+		this.fetchData();
+	}
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
