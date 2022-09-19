@@ -18,4 +18,14 @@ class Summary extends Component {
         </>);
     }
 
+
+    // declares a variable with all the data about job growth for each year
+    growthCol(growthData){
+        return(<>
+            <div style={{fontSize:'40px',color:"green"}}>+{growthData.regional}%</div>
+            <div>% Change ({growthData.start_year}-{growthData.end_year})</div>
+            <div>Nation: <span style={{color:"green"}}>+{growthData.national_avg}%</span></div>
+        </>)
+    }
+
     
