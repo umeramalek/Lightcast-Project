@@ -37,3 +37,30 @@ class Summary extends Component {
             <div>Nation: ${earningsData.national_avg}/hr</div>
         </>)
     }
+
+
+    // styling/sizing and rendering the summary section
+    render(){
+        return(        
+        <div style={{paddingTop:'30px'}}>
+            <h5>Occupation Summary for Computer Programmers</h5>
+            <hr className="headerLineNo"></hr>
+            <Container fluid className="borderBottom">
+                <Row>
+                    <Col lg="4" className="boxPadding">
+                        {this.jobsCol(this.props.summaryData.jobs)}
+                    </Col>
+                    <Col lg="4" className="boxPadding leftRightBorder">
+                        {this.growthCol(this.props.summaryData.jobs_growth)}
+                    </Col>
+                    <Col lg="4" className="boxPadding">
+                        {this.earningsCol(this.props.summaryData.earnings)}
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+        )
+    }   
+}
+
+export default Summary;
