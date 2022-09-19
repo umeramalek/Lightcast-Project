@@ -85,3 +85,16 @@ class RegionGraph extends Component {
 				dataPoints: regionGraphData.nation.map((d)=> {return {x:d.year,y:d.percentage} })
 			}]
 		};
+
+		// returns the text/line/styling and renders the options object
+		return (
+			<div style={{paddingTop:'30px'}}>
+				<h5>Regional Trends</h5>
+				<hr className="headerLine"></hr>
+				<CanvasJSChart options = {options} />
+			</div>
+			);
+		}
+	}
+	
+	export default RegionGraph;
