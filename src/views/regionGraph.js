@@ -26,3 +26,34 @@ class RegionGraph extends Component {
 				});
 			});
 	}
+
+	componentDidMount() {
+		this.fetchData();
+	}
+
+	render() {
+		// checks if the regionGraphData is null, if so then return null
+		if(!this.state.regionGraphData)
+            return null;
+		const regionGraphData = this.state.regionGraphData;
+		// creates object and set up two axis 
+		const options = {
+			animationEnabled: true,
+			exportEnabled: false,
+			theme: "light2", 
+			// giving each axis properties (y axis - percentage, intervals of 10, suffix)
+			axisY: {
+				title: "Percentage change",
+				interval: 10,
+				suffix: "%",
+				gridThickness: 0,
+				lineThickness: 2
+			},
+			// x-axis - interval, year
+			axisX: {
+				interval: 2,
+				intervalType: 'year',
+				gridColor: "lightgray" ,
+				gridThickness: 0.5,
+				lineThickness: 0
+			},
