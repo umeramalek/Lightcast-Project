@@ -33,3 +33,23 @@ class RegionGrid extends Component {
         </>);
     }
 
+
+    // rowData - an array of objects that represents the data for each row in the table
+    // marker - which is used to create markers on the grid with different colors and styles
+    dataRow(rowData,name,marker){
+        // varaible for each calculation in the data
+        const startYear = rowData[0];
+        const endYear = rowData[rowData.length-1];
+        const change = endYear - startYear;
+        const percentage = (change/startYear*100).toFixed(1);  
+        return (<>
+        {/* each column styled - right alignment, number format (integer, percentage) */}
+            <Col className="gridCol" style={{maxWidth: '50px'}}><div className={marker}></div></Col>
+            <Col lg={7} className="gridCol"><span>{name}</span></Col>
+            <Col className="gridCol rightAlign"><span>{formatNumber(startYear)}</span></Col>
+            <Col className="gridCol rightAlign"><span>{formatNumber(endYear)}</span></Col>
+            <Col className="gridCol rightAlign"><span>{formatNumber(change)}</span></Col>
+            <Col className="gridCol rightAlign"><span>{percentage}%</span></Col>
+        </>);
+    }
+
