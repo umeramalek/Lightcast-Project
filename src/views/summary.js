@@ -28,4 +28,12 @@ class Summary extends Component {
         </>)
     }
 
-    
+
+    // declares a variable with all the data about job earning for each year(average)
+    earningsCol(earningsData){
+        return(<>
+            <div style={{fontSize:'40px'}}>${earningsData.regional}/hr</div>
+            <div>Median Hourly Earnings</div>
+            <div>Nation: ${earningsData.national_avg}/hr</div>
+        </>)
+    }
