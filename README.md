@@ -54,7 +54,7 @@
  * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
  * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
  * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
- * [React](https://fontawesome.com/)
+ * [React](https://reactjs.org/)
  * [ReactBootstrap](https://getbootstrap.com/)
  * [CanvasJS](https://canvasjs.com/)
 
